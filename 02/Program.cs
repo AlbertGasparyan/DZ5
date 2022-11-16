@@ -15,13 +15,12 @@ double b2 = Convert.ToInt32(Console.ReadLine());
 
 
 
-Formul(k1,b1,k2,b2);
+Formul(k1, b1, k2, b2);
 
 
-void Formul(double k1,double b1,double k2,double b2)
+void Formul(double k1, double b1, double k2, double b2)
 {
-    double x = (b1 - b2) / (k1 - k2);
-    double y = k1 * x + b1;
+    double x = (b2 - b1) / (k1 - k2);
+    double y = (k1 * (b2 - b1)) / (k1 - k2) + b1;
     Console.WriteLine($"Пересечение в точке: ({x};{y})");
 }
-
